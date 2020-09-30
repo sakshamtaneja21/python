@@ -267,6 +267,25 @@ print(s[8:])
 # thon
 print(:)
 # Monty Python
+print(s[0:5:2])
+# Mny
+print(s[0:11:2])
+# MnyPto
+print(s[2:11:2])
+# nyPto
+print(s[::-1])
+# nohtyP ytnoM
+```
+## Concepts of f-strings
+```
+me = "Kartikey"
+a1 = 3
+let = f"This is {me} {a1} {3*5}"
+print(let)
+
+
+Output:
+    This is Kartikey 3 15
 ```
 ## Parsing and Extracting
 When we need partitcular part of the string then we need to find its starting position and ending position and then we can slice the string text
@@ -418,6 +437,18 @@ for line in fhand:
 print("There were ",count,"subject lines in ",fname)
 # There were 1797 subject line in mbox.txt
 ```
+
+## Using with Block to open the Python files
+* Its importance is that when we use with open concepts then we need not to close the file .
+```
+* by default it is in read mode 
+with open ("Kartikey.txt") as f:
+    a = f.read(4)
+    print(a)
+    
+Output:
+    your file is open by reading its 4 character
+```
 ## To check the filename exist or not
 * Before starting we will learn about the ```quit()``` function this function is used to terminate the run operation in the middle of the code.
 * Invocation of ```quit()``` function helps to terminate the program if something goes wrong.
@@ -429,6 +460,16 @@ try:
 except:
     print("File not found ",fname)
     quit()
+    
+    
+    
+#### Alternative method of try except it shows in output which type of error is coming 
+fname = input('Enter the filename: ')
+
+try:
+    fhand = open(fname)
+except Exception as e:
+    print(e)
 
 # All your remaining code ...
 ```
