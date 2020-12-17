@@ -10,14 +10,14 @@ print "Akshay Bengani"
 ```
 This is allowed in Python 2 but not in Python 3 
 ```
-print("Akshay Bengani");
+print("Akshay Bengani")
 ```
 This is important we have to use () while in the print function.
 
 ## Input in Python
 You can take input in python by using the input() function
 ```
-a = input("Enter your name here ");
+a = input("Enter your name here ")
 ```
 This will take input and store it in a variable
 
